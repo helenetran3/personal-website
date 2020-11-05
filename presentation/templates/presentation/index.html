@@ -1,0 +1,237 @@
+{% load static %}
+
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'dev_projects/css/style.css' %}"> -->
+
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title></title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'presentation/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static 'presentation/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <ul id="dropdown_pro" class="dropdown-content">
+    <li><a href="#!">Education</a></li>
+    <li><a href="{% url 'dev_projects:index' %}">Projects</a></li>
+  </ul>
+    <ul id="dropdown_perso" class="dropdown-content">
+      <li><a href="#!">Clubs</a></li>
+      <li><a href="#!">Trips</a></li>
+    </ul>
+  <div class="navbar-fixed">
+    <nav class="grey darken-4" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo white-text"><i class="material-icons">home</i></a>
+        <!-- <a id="logo-container" href="#" class="brand-logo white-text">Hélène Tran</a> -->
+        <ul class="right hide-on-med-and-down">
+          <li><a class="white-text" href="#educ-section">EDUCATION</a></li>
+          <li><a class="white-text" href="#proj-section">PROJECTS</a></li>
+          <li><a class="white-text" href="#contact-me">VOLUNTEERING</a></li>
+          <li><a class="white-text" href="#contact-me">BLOG</a></li>
+          <li><a class="white-text" href="#contact-me">CONTACT</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">EDUCATION</a></li>
+          <li><a href="{% url 'dev_projects:index' %}">PROJECTS</a></li>
+          <!-- <li class="divider"></li> -->
+          <li><a href="#">VOLUNTEERING</a></li>
+          <li><a href="#">BLOG</a></li>
+          <!-- <li class="divider"></li> -->
+          <li><a class="white-text" href="#contact-me">CONTACT</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h2 class="header black-text">HELENE TRAN</h2>
+        <div class="row">
+          <p class="header col s12 black-text">
+            PERSISTANT, CHALLENGE LOVER, ALTRUIST
+          </p>
+          <p class="header col s12 black-text">
+            Research Engineer in Artificial Intelligence <br>
+            Passion for Computer Vision <br>
+            Software and Web Programmer
+          </p>
+
+          <a href="mailto:tr.helene@hotmail.com" class="brand-logo black-text"><i class="material-icons">email</i></a>
+          <a href="http://www.linkedin.com/in/helene-tran1" class="brand-logo black-text"><img src="{% static 'presentation/images/linkedin.png' %}" alt="linkedin" width=25></a>
+          <a href="http://github.com/helenetran3" class="brand-logo black-text"><img src="{% static 'presentation/images/github.png' %}" alt="github" width=25></a>
+          <a href="{% static 'presentation/images/CV_TRAN-Helene.pdf' %}" class="brand-logo black-text"><img src="{% static 'presentation/images/CV.png' %}" alt="CV" width=25></a>
+
+          <br>
+
+          <a href="{% url 'dev_projects:index' %}" id="download-button" class="btn-large waves-effect waves-light black white-text">My Skills</a>
+
+
+            <!-- <p class="header col s12 black-text"> -->
+              <!-- Always in search of new opportunities to increase my knowledge and develop my personal skills,
+              I am a newly graduated student eager to learn. I'm particularly enthusiastic about programming:
+              I've developed a game with my friend to support our classes for a humanitarian project in Nepal
+              and I've been involved during one year on the development of an open-source platform for
+              radiotherapy research with a cross-cultural team. I'm also passionate about everything revolved
+              around Data Science and Artificial Intelligence. How amazing our modern tools are able to get
+              insight into any aspect of the world and the achievement of AI algorithms to help our society
+              flourish!
+
+              Aside from my technical background, I'm an open-minded and caring person who loves discovering
+              new cultures. Feel free to contact me anytime!</p> -->
+            <!-- <h4 class="header col s12 black-text">Enjoy!</h4> -->
+
+        </div>
+        <!-- <div class="row center"> -->
+          <!-- <a href="{% url 'dev_projects:index' %}" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">More</a> -->
+        <!-- </div> -->
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'presentation/images/BW-Forest.jpg' %}" alt="Background 1"></div>
+  </div>
+
+
+  <div id="educ-section" class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <h3 class="center">EDUCATION</h3>
+
+            <p class="light">After studying two years in Preparatory Classes for the Grandes Ecoles,
+            I am currently a holder of two master degrees: <br> one in <strong>Software Engineering</strong> (France),
+            the other in <strong>Machine Learning and Big Data</strong> (Australia). </p>
+
+            <div class="row center">
+              <a href="{% url 'dev_projects:index' %}" id="download-button" class="btn-large waves-effect waves-light black">More</a>
+            </div>
+
+            <div class="center"><img src="{% static 'presentation/images/UOW_grad.jpg' %}" alt="UoW Graduation Ceremony" width=800></div>
+
+
+            <!-- <div class="row brown-text"> -->
+              <!-- <div class="col s1 offset-s4"><h2><i class="material-icons">business_center</i></h2></div> -->
+              <!-- <div class="col s3"><h4>Education</h4></div> -->
+            <!-- </div> -->
+            <!-- <h2 class="center brown-text"><i class="material-icons">business_center</i></h2> -->
+            <!-- <h4 class="center brown-text">Education</h4> -->
+
+            <br>
+            <br>
+
+            <!-- <div class="row center">
+              <a href="{% url 'dev_projects:index' %}" id="download-button" class="btn-large waves-effect waves-light black">More</a>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div id="proj-section" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h3 class="center white-text">PROFESSIONAL PROJECTS</h3>
+          <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
+
+          <p class="light">Along with my studies, I was part of multiple development and research projects
+          which provided me with technical skills. <br> The most substantial ones are: <br>
+          <strong>Research Intern for Prostate Cancer Classification</strong> at Guerbet
+          <br> <strong>Front-End Developer of OnkoDICOM</strong>, an open-source platform for radiotherapy research<br> </p>
+
+          <div class="row center">
+            <a href="{% url 'dev_projects:index' %}" id="download-button" class="btn-large waves-effect waves-light white black-text">More</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'presentation/images/nepal_class_black.jpg' %}" alt="Nepal class"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div id="contact-me" class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>VOLUNTEERING</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'presentation/images/background3.jpg' %}" alt="Background3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'presentation/js/materialize.js' %}"></script>
+  <script src="{% static 'presentation/js/init.js' %}"></script>
+
+  </body>
+</html>
