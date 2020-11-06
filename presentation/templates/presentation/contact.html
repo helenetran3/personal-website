@@ -1,0 +1,116 @@
+{% load static %}
+
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'dev_projects/css/style.css' %}"> -->
+
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title></title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'presentation/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static 'presentation/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav class="grey darken-4" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="{% url 'presentation:index' %}" class="brand-logo white-text"><i class="material-icons">home</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="white-text" href="#educ-section">EDUCATION</a></li>
+          <li><a class="white-text" href="#proj-section">PROJECTS</a></li>
+          <li><a class="white-text" href="#volunteer-section">VOLUNTEERING</a></li>
+          <li><a class="white-text" href="#blog-section">BLOG</a></li>
+          <li><a class="white-text" href="#contact-me">CONTACT</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">EDUCATION</a></li>
+          <li><a href="{% url 'dev_projects:index' %}">PROJECTS</a></li>
+          <li><a href="#">VOLUNTEERING</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a class="{% url 'presentation:contact' %}" href="#contact-me">CONTACT</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+<!-- CONTACT SECTION -->
+  <footer id="contact-me" class="page-footer light-blue darken-4">
+    <div class="container">
+      <div class="row">
+          <h3 class="white-text center">CONTACT</h5>
+
+          <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="first_name" type="text" class="validate white-text" placeholder="First Name" required>
+                    <span class="helper-text" data-error="Please fill the box."></span>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate white-text" placeholder="Last Name" required>
+                    <span class="helper-text" data-error="Please fill the box."></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate white-text" placeholder="Email" required>
+                    <span class="helper-text" data-error="Invalid email address, please check the format."></span>
+                  </div>
+                </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">work</i>
+                      <input id="job" type="text" class="validate white-text" placeholder="Job">
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="company" type="text" class="validate white-text" placeholder="Company (if applicable)">
+                    </div>
+                  </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix">today</i>
+                      <input id="msg_subject" type="text" class="validate white-text" placeholder="Message subject">
+                      <span class="helper-text" data-error="Please fill the box."></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="message" class="materialize-textarea white-text" placeholder="Your message" required></textarea>
+                    <span class="helper-text" data-error="Please fill the box."></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+        <div class="row right">
+          <a href="{% url 'dev_projects:index' %}" id="download-button" class="btn-large waves-effect waves-light white light-blue-text text-darken-4">
+            Send<i class="material-icons right">send</i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer: "Made with Materialize" -->
+    <div class="footer-copyright">
+      <div class="container">
+      Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'presentation/js/materialize.js' %}"></script>
+  <script src="{% static 'presentation/js/init.js' %}"></script>
+
+  </body>
+</html>
