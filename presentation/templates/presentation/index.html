@@ -101,10 +101,9 @@
   </div>
 
 
+<!-- EDUCATION SECTION -->
   <div id="educ-section" class="container">
     <div class="section">
-
-      <!--   Icon Section   -->
       <div class="row">
         <div class="col s12">
           <div class="icon-block">
@@ -143,6 +142,7 @@
   </div>
 
 
+<!-- PROJECT SECTION -->
   <div id="proj-section" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
@@ -165,10 +165,11 @@
     <div class="parallax"><img src="{% static 'presentation/images/nepal_class_black.jpg' %}" alt="Nepal class"></div>
   </div>
 
-  <div class="container">
-    <div class="section">
 
-      <div id="volunteer-section" class="row">
+<!-- VOLUNTEERING SECTION  -->
+  <div id="volunteer-section" class="container">
+    <div class="section">
+      <div class="row">
         <div class="col s12 center">
           <h3>VOLUNTEERING</h3>
           <p class="center light">My own purpose of life is to be fully committed in helping people to have
@@ -190,6 +191,7 @@
   </div>
 
 
+<!-- BLOG SECTION -->
   <div id="blog-section" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
@@ -209,33 +211,82 @@
   </div>
 
 
+<!-- CONTACT SECTION -->
   <footer id="contact-me" class="page-footer light-blue darken-4">
     <div class="container">
       <div class="row">
           <h3 class="white-text center">CONTACT</h5>
           <p class="light">
-          <ul>
-            <li> LinkedIn: <a href="http://www.linkedin.com/in/helene-tran1" class="yellow-text">helene-tran1</a> </li>
-            <li> Email: <a href="mailto:tr.helene@hotmail.com" class="yellow-text">tr.helene@hotmail.com</a> </li>
+            Feel free to send me a message with the following links:
+            <ul>
+              <li> LinkedIn: <a href="http://www.linkedin.com/in/helene-tran1" class="yellow-text">helene-tran1</a> </li>
+              <li> Email: <a href="mailto:tr.helene@hotmail.com" class="yellow-text">tr.helene@hotmail.com</a> </li>
+            </ul>
+          </p>
+          <br>
+
+          <hr width="75%" color=white size=1>
+          <br>
+
+          <p class="light">
+            You can also contact me through this form, I will reply to you as soon as possible :)
           </p>
 
-      <div style="background-color:white;">
-          <form>
-            <textarea rows="20" cols="40" name="contact" spellcheck="false"
-            placeholder="You can also contact me through this textbox,
-            I will reply to you as soon as possible :)">
-            </textarea>
-          </form>
-      </div>
 
-      <div class="row right">
-        <a href="{% url 'dev_projects:index' %}" id="download-button" class="btn-large waves-effect waves-light white light-blue-text text-darken-4">
-          Send<i class="material-icons right">send</i></a>
-      </div>
+          <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="first_name" type="text" class="validate white-text" placeholder="First Name" required>
+                    <span class="helper-text" data-error="Please fill the box."></span>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate white-text" placeholder="Last Name" required>
+                    <span class="helper-text" data-error="Please fill the box."></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate white-text" placeholder="Email" required>
+                    <span class="helper-text" data-error="Invalid email address, please check the format."></span>
+                  </div>
+                </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">work</i>
+                      <input id="job" type="text" class="validate white-text" placeholder="Job">
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="company" type="text" class="validate white-text" placeholder="Company (if applicable)">
+                    </div>
+                  </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix">today</i>
+                      <input id="msg_subject" type="text" class="validate white-text" placeholder="Message subject" required>
+                      <span class="helper-text" data-error="Please fill the box."></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="message" class="materialize-textarea white-text" placeholder="Your message" required></textarea>
+                    <span class="helper-text" data-error="Please fill the box."></span>
+                  </div>
+                </div>
+              </form>
+            </div>
 
+        <div class="row right">
+          <a href="{% url 'dev_projects:index' %}" id="download-button" class="btn-large waves-effect waves-light white light-blue-text text-darken-4">
+            Send<i class="material-icons right">send</i></a>
+        </div>
       </div>
     </div>
 
+    <!-- Footer: "Made with Materialize" -->
     <div class="footer-copyright">
       <div class="container">
       Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
