@@ -31,8 +31,8 @@
         <ul class="right hide-on-med-and-down">
           <li><a class="white-text" href="#educ-section">EDUCATION</a></li>
           <li><a class="white-text" href="#proj-section">PROJECTS</a></li>
-          <li><a class="white-text" href="#contact-me">VOLUNTEERING</a></li>
-          <li><a class="white-text" href="#contact-me">BLOG</a></li>
+          <li><a class="white-text" href="#volunteer-section">VOLUNTEERING</a></li>
+          <li><a class="white-text" href="#blog-section">BLOG</a></li>
           <li><a class="white-text" href="#contact-me">CONTACT</a></li>
         </ul>
 
@@ -110,7 +110,7 @@
           <div class="icon-block">
             <h3 class="center">EDUCATION</h3>
 
-            <p class="light">After studying two years in Preparatory Classes for the Grandes Ecoles,
+            <p class="light center">After studying two years in Preparatory Classes for the Grandes Ecoles,
             I am currently a holder of two master degrees: <br> one in <strong>Software Engineering</strong> (France),
             the other in <strong>Machine Learning and Big Data</strong> (Australia). </p>
 
@@ -168,11 +168,21 @@
   <div class="container">
     <div class="section">
 
-      <div id="contact-me" class="row">
+      <div id="volunteer-section" class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>VOLUNTEERING</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h3>VOLUNTEERING</h3>
+          <p class="center light">My own purpose of life is to be fully committed in helping people to have
+            a better future. I achieve my desire everyday not only through my professionnal career, but also
+            through my volunteering experiences. Want to know more about them?</p>
+
+
+          <div class="row center">
+            <a href="{% url 'dev_projects:index' %}" id="download-button" class="btn-large waves-effect waves-light black white-text">Yes, definitely!</a>
+          </div>
+
+          <div class="center"><img src="{% static 'presentation/images/nepal-school.jpg' %}" alt="HumanIIE with Nepalese School" width=800></div>
+
+
         </div>
       </div>
 
@@ -180,49 +190,55 @@
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
+  <div id="blog-section" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h3>PERSONAL BLOG</h3>
+            <p class="center light">What about my interests? <strong>Personal development</strong>, <strong>trips</strong>, it's all in this section!</p>
+
+            <div class="row center">
+              <a href="{% url 'dev_projects:index' %}" id="download-button" class="btn-large waves-effect waves-light white black-text">Come here</a>
+            </div>
+
+            <div class="center"><img src="{% static 'presentation/images/NZ.jpg' %}" alt="New-Zealand" width=700></div>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="{% static 'presentation/images/background3.jpg' %}" alt="Background3"></div>
+    <div class="parallax"><img src="{% static 'presentation/images/sea1.jpg' %}" alt="Australian_sea"></div>
   </div>
 
-  <footer class="page-footer teal">
+
+  <footer id="contact-me" class="page-footer light-blue darken-4">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h3 class="white-text center">CONTACT</h5>
+          <p class="light">
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
+            <li> LinkedIn: <a href="http://www.linkedin.com/in/helene-tran1" class="yellow-text">helene-tran1</a> </li>
+            <li> Email: <a href="mailto:tr.helene@hotmail.com" class="yellow-text">tr.helene@hotmail.com</a> </li>
+          </p>
+
+      <div style="background-color:white;">
+          <form>
+            <textarea rows="20" cols="40" name="contact" spellcheck="false"
+            placeholder="You can also contact me through this textbox,
+            I will reply to you as soon as possible :)">
+            </textarea>
+          </form>
+      </div>
+
+      <div class="row right">
+        <a href="{% url 'dev_projects:index' %}" id="download-button" class="btn-large waves-effect waves-light white light-blue-text text-darken-4">
+          Send<i class="material-icons right">send</i></a>
+      </div>
+
       </div>
     </div>
+
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
