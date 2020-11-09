@@ -44,51 +44,57 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h2 class="header black-text">HELENE TRAN</h2>
-        <div class="row">
-          <p class="header col s12 black-text">
+        <h2 class="header white-text right-align">HELENE TRAN</h2>
+        <div class="row right-align">
+          <h4 class="header col s12 white-text">
             PERSISTANT, CHALLENGE LOVER, ALTRUIST
-          </p>
-          <p class="header col s12 black-text">
+          </h3>
+          <p class="header col s12 white-text">
             Research Engineer in Artificial Intelligence <br>
             Passion for Computer Vision <br>
             Software and Web Programmer
           </p>
 
-          <a href="mailto:tr.helene@hotmail.com" class="brand-logo black-text"><i class="material-icons">email</i></a>
-          <a href="http://www.linkedin.com/in/helene-tran1" class="brand-logo black-text"><img src="{% static 'presentation/images/linkedin.png' %}" alt="linkedin" width=25></a>
-          <a href="http://github.com/helenetran3" class="brand-logo black-text"><img src="{% static 'presentation/images/github.png' %}" alt="github" width=25></a>
-          <a href="{% static 'presentation/images/CV_TRAN-Helene.pdf' %}" class="brand-logo black-text"><img src="{% static 'presentation/images/CV.png' %}" alt="CV" width=25></a>
+          <a href="mailto:tr.helene@hotmail.com" class="brand-logo white-text"><i class="material-icons">email</i></a>
+          <a href="http://www.linkedin.com/in/helene-tran1" class="brand-logo white-text"><img src="{% static 'presentation/images/linkedin.png' %}" alt="linkedin" width=25></a>
+          <a href="http://github.com/helenetran3" class="brand-logo white-text"><img src="{% static 'presentation/images/github.png' %}" alt="github" width=25></a>
+          <a href="{% static 'presentation/images/CV_TRAN-Helene.pdf' %}" class="brand-logo white-text"><img src="{% static 'presentation/images/CV.png' %}" alt="CV" width=25></a>
 
           <br>
 
           <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light black white-text">My Skills</a>
 
-
-            <!-- <p class="header col s12 black-text"> -->
-              <!-- Always in search of new opportunities to increase my knowledge and develop my personal skills,
-              I am a newly graduated student eager to learn. I'm particularly enthusiastic about programming:
-              I've developed a game with my friend to support our classes for a humanitarian project in Nepal
-              and I've been involved during one year on the development of an open-source platform for
-              radiotherapy research with a cross-cultural team. I'm also passionate about everything revolved
-              around Data Science and Artificial Intelligence. How amazing our modern tools are able to get
-              insight into any aspect of the world and the achievement of AI algorithms to help our society
-              flourish!
-
-              Aside from my technical background, I'm an open-minded and caring person who loves discovering
-              new cultures. Feel free to contact me anytime!</p> -->
-            <!-- <h4 class="header col s12 black-text">Enjoy!</h4> -->
-
         </div>
-        <!-- <div class="row center"> -->
-          <!-- <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light teal lighten-1">More</a> -->
-        <!-- </div> -->
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="{% static 'presentation/images/BW-Forest.jpg' %}" alt="Background 1"></div>
+    <div class="parallax"><img src="{% static 'presentation/images/melbourne_small_black.jpg' %}" alt="Background 1"></div>
   </div>
+
+
+  <!-- EDUCATION SECTION -->
+  <!-- <div id="educ-section" class="container" style="background: black;">
+    <div class="section">
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <h3 class="center white-text">ABOUT ME</h3>
+
+            <p class="light center white-text">After studying two years in Preparatory Classes for the Grandes Ecoles,
+            I am currently a holder of two master degrees: <br> one in <strong>Software Engineering</strong> (France),
+            the other in <strong>Machine Learning and Big Data</strong> (Australia). </p>
+
+            <div class="row center">
+              <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light white black-text">More</a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
 
 
 <!-- EDUCATION SECTION -->
@@ -117,6 +123,7 @@
                   of Wollongong in Australia. What an immersive and rewarding year!</p>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -129,7 +136,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h3 class="center white-text">PROFESSIONAL PROJECTS</h3>
+          <h3 class="center deep-purple-text text-lighten-3">PROFESSIONAL PROJECTS</h3>
 
           <p class="light">Along with my studies, I was part of multiple development and research projects
           which provided me with technical skills. <br> The most substantial ones are: <br>
@@ -137,7 +144,19 @@
           <br> <strong>Front-End Developer of OnkoDICOM</strong>, an open-source platform for radiotherapy research<br> </p>
 
           <div class="row center">
-            <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light white black-text">More</a>
+            <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light deep-purple lighten-3 black-text">More</a>
+          </div>
+
+          <div class="card deep-purple">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="{% static 'presentation/images/Onko_team2.jpg' %}" alt="Onko team" width="700">
+            </div>
+            <div class="card-content left-align">
+              <span class="card-title activator white-text"><strong>Onko team during SCIT Trade Show 2019</strong></span>
+              <p class="white-text">Each year, the University of Wollongong showcases student projects from
+                the School of Computing and Information Technology (SCIT). This was a precious opportunity to make a
+                demonstration of our OnkoDICOM software to professors, students and health professionals.</p>
+            </div>
           </div>
 
         </div>

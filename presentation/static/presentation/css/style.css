@@ -55,3 +55,20 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+@font-face {
+    font-family: 'noto_sans_hklight';
+    src: url('notosanshk-light-webfont.woff2') format('woff2'),
+         url('notosanshk-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ibm_plex_serifregular';
+    src: url('ibmplexserif-regular-webfont.woff2') format('woff2'),
+         url('ibmplexserif-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
