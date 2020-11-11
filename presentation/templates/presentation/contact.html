@@ -40,32 +40,35 @@
   </div>
 
 <!-- CONTACT SECTION -->
-  <footer id="contact-me" class="page-footer teal darken-3">
+  <footer id="contact-me" class="page-footer teal">
     <div class="container">
       <div class="row">
           <h3 class="white-text center">CONTACT</h5>
 
           <div class="row">
-              <form  method="post" name="contact-form" action="contact-form.php" class="col s12">
+              <form action="{% url 'presentation:submit_form' %}" method="post" class="col s12">
+                {% csrf_token %}
                 <div class="row">
                   <div class="input-field col s6">
                     <i class="material-icons prefix">account_circle</i>
-                    <input id="first_name" type="text" class="validate white-text" placeholder="First Name" required>
+                    {{ form.subject }}
+                    <!-- <input id="{{ form.subject.id_for_label }}" type="text" class="validate white-text" placeholder="First Name*" required> -->
                     <span class="helper-text" data-error="Please fill the box."></span>
                   </div>
-                  <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate white-text" placeholder="Last Name" required>
+                  <!-- <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate white-text" placeholder="Last Name*" required>
                     <span class="helper-text" data-error="Please fill the box."></span>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="row">
                   <div class="input-field col s12">
                     <i class="material-icons prefix">email</i>
-                    <input id="email" type="email" class="validate white-text" placeholder="Email" required>
+                    {{ form.sender }}
+                    <!-- <input id="{{ form.sender.id_for_label }}" type="email" class="validate white-text" placeholder="Email*" required> -->
                     <span class="helper-text" data-error="Invalid email address, please check the format."></span>
                   </div>
                 </div>
-                  <div class="row">
+                  <!-- <div class="row">
                     <div class="input-field col s6">
                       <i class="material-icons prefix">work</i>
                       <input id="job" type="text" class="validate white-text" placeholder="Job">
@@ -78,23 +81,24 @@
                   <div class="input-field col s12">
                       <i class="material-icons prefix">today</i>
                       <input id="msg_subject" type="text" class="validate white-text" placeholder="Message subject">
-                      <span class="helper-text" data-error="Please fill the box."></span>
                   </div>
-                </div>
+                </div> -->
                 <div class="row">
                   <div class="input-field col s12">
                       <i class="material-icons prefix">mode_edit</i>
-                    <textarea id="message" class="materialize-textarea white-text" placeholder="Your message" required></textarea>
+                      {{ form.message }}
+                    <!-- <textarea id="{{ form.message.id_for_label }}" class="materialize-textarea white-text" placeholder="Your message*" required></textarea> -->
                     <span class="helper-text" data-error="Please fill the box."></span>
                   </div>
                 </div>
+
+                <div class="row right-align">
+                  <input type="submit" value="Send"></input>
+                  <!-- <a class="btn-large waves-effect waves-light white light-blue-text text-darken-4"> -->
+                    <!-- Send<i class="material-icons right">send</i></a> -->
+                </div>
               </form>
             </div>
-
-        <div class="row right">
-          <a href="{% url 'dev_projects:index' %}" id="download-button" class="btn-large waves-effect waves-light white light-blue-text text-darken-4">
-            Send<i class="material-icons right">send</i></a>
-        </div>
       </div>
     </div>
 
