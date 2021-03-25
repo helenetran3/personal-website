@@ -13,6 +13,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="{% static 'presentation/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="{% static 'presentation/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- Font download from Google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&display=swap" rel="stylesheet"> 
 </head>
 <body>
   <div class="navbar-fixed">
@@ -44,15 +48,23 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h2 class="header white-text right-align">HELENE TRAN</h2>
+        <h1 class="header green-text right-align">HELENE TRAN</h2>
+
         <div class="row right-align">
-          <h4 class="header col s12 white-text">
-            PERSISTANT, CHALLENGE LOVER, ALTRUIST
-          </h3>
+
+          <p class="header col s12 white-text">
+            Artificial Intelligence Ph.D. candidate 
+            at <a href="https://www.lojelis.com/fr/recherche-developpement-innovation/">Lojelis</a> 
+            and <a href="https://limos.fr/">LIMOS</a>, Clermont-Ferrand, France 
+          </p>
+        
+          <h4 class="header col s12 yellow-text">
+            PERSEVERING, CHALLENGE LOVER, ALTRUIST
+          </h4>
           <p class="header col s12 white-text">
             Research Engineer in Artificial Intelligence <br>
             Passion for Computer Vision <br>
-            Software and Web Programmer
+            Software Developer
           </p>
 
           <a href="mailto:tr.helene@hotmail.com" class="brand-logo white-text"><i class="material-icons">email</i></a>
@@ -60,9 +72,9 @@
           <a href="http://github.com/helenetran3" class="brand-logo white-text"><img src="{% static 'presentation/images/github.png' %}" alt="github" width=25></a>
           <a href="{% static 'presentation/images/CV_TRAN-Helene.pdf' %}" class="brand-logo white-text"><img src="{% static 'presentation/images/CV.png' %}" alt="CV" width=25></a>
 
-          <br>
+          <!-- <br>
 
-          <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light black white-text">My Skills</a>
+          <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light black white-text">My Skills</a> -->
 
         </div>
         <br><br>
@@ -74,16 +86,18 @@
 
 
   <!-- EDUCATION SECTION -->
-  <!-- <div id="educ-section" class="container" style="background: black;">
+  <div id="educ-section" class="container" style="background: black;">
     <div class="section">
       <div class="row">
         <div class="col s12">
           <div class="icon-block">
-            <h3 class="center white-text">ABOUT ME</h3>
+            <!-- <h3 class="center white-text">ABOUT ME</h3> -->
 
-            <p class="light center white-text">After studying two years in Preparatory Classes for the Grandes Ecoles,
-            I am currently a holder of two master degrees: <br> one in <strong>Software Engineering</strong> (France),
-            the other in <strong>Machine Learning and Big Data</strong> (Australia). </p>
+            <p class="light white-text">Perseverance is the adjective that best describes me. 
+              Always looking for challenging tasks to develop my technical background, I have a strong interest
+              in artificial intelligence and computer vision. I have acquired a strong autonomy and a sense of responsibility 
+              thanks to the multiple experiences of my student and professional life. 
+              Moreover, I have the ambition to get involved in research projects that contribute to the well-being of our society. </p>
 
             <div class="row center">
               <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light white black-text">More</a>
@@ -94,7 +108,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
 
 <!-- EDUCATION SECTION -->
