@@ -89,8 +89,7 @@
       <div class="container">
         <div class="row left-align">
 
-          <div class="col-10">
-          <!-- <h2 class="center white-text">ABOUT ME</h2> -->
+          <div class="col s10">
 
             <p class="light white-text">Perseverance is the adjective that best describes me. <br>
               Always looking for challenging tasks to develop my technical background, I have a strong interest
@@ -114,28 +113,32 @@
   <div id="educ-section" class="container">
     <div class="section">
       <div class="row">
-        <div class="col s12">
-          <div class="icon-block">
-            <h2 class="center blue-text text-darken-2">EDUCATION</h2>
+        <div class="icon-block">
 
-            <p class="light center">After studying two years in Preparatory Classes for the Grandes Ecoles,
-            I am currently a holder of two master degrees: <br> one in <strong>Software Engineering</strong> (France),
-            the other in <strong>Machine Learning and Big Data</strong> (Australia). </p>
-
-            <div class="row center">
-              <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light blue darken-2">More</a>
-            </div>
+          <div class="col s6">
 
             <div class="card blue darken-4">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="{% static 'presentation/images/UOW_grad.jpg' %}" alt="UoW Graduation Ceremony" width="700">
               </div>
               <div class="card-content">
-                <span class="card-title activator white-text"><strong>My graduation day at the University of Wollongong (December 2019)</strong></span>
+                <span class="card-title activator white-text"><strong>My graduation day at the University of Wollongong</strong></span>
                 <p class="white-text">In December 2019, I graduated with Master of Computer Sciences with Distinction at the University
                   of Wollongong in Australia. What an immersive and rewarding year!</p>
               </div>
             </div>
+
+          </div>
+
+          <div class="col s6 left-align">
+
+            <h2 class="blue-text text-darken-2">EDUCATION</h2>
+
+            <p class="light">After studying two years in Preparatory Classes for the Grandes Ecoles,
+            I am currently a holder of two master degrees: one in <strong>Software Engineering</strong> (France),
+            the other in <strong>Machine Learning and Big Data</strong> (Australia). </p>
+
+            <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light blue darken-2">More</a>
 
           </div>
         </div>
@@ -148,27 +151,30 @@
   <div id="proj-section" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center">
-          <h2 class="center deep-purple-text text-lighten-3">PROFESSIONAL PROJECTS</h2>
+        <div class="row">
 
-          <p class="light">Along with my studies, I was part of multiple development and research projects
-          which provided me with technical skills. <br> The most substantial ones are: <br>
-          <strong>Research Intern for Prostate Cancer Classification</strong> at Guerbet
-          <br> <strong>Front-End Developer of OnkoDICOM</strong>, an open-source platform for radiotherapy research<br> </p>
+          <div class="col s6 right-align">
+            <h2 class="deep-purple-text text-lighten-3">PROFESSIONAL PROJECTS</h2>
 
-          <div class="row center">
+            <p class="light">Along with my studies, I was part of multiple development and research projects
+            which provided me with technical skills. <br> The most substantial ones are: <br>
+            <strong>Research Intern for Prostate Cancer Classification</strong> at Guerbet
+            <br> <strong>Front-End Developer of OnkoDICOM</strong>, an open-source platform for radiotherapy research<br> </p>
+  
             <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light deep-purple lighten-3 black-text">More</a>
           </div>
 
-          <div class="card deep-purple">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="{% static 'presentation/images/Onko_team2.jpg' %}" alt="Onko team" width="700">
-            </div>
-            <div class="card-content left-align">
-              <span class="card-title activator white-text"><strong>Onko team during SCIT Trade Show 2019</strong></span>
-              <p class="white-text">Each year, the University of Wollongong showcases student projects from
-                the School of Computing and Information Technology (SCIT). This was a precious opportunity to make a
-                demonstration of our OnkoDICOM software to professors, students and health professionals.</p>
+          <div class="col s6">
+            <div class="card deep-purple">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="{% static 'presentation/images/Onko_team2.jpg' %}" alt="Onko team" width="700">
+              </div>
+              <div class="card-content left-align">
+                <span class="card-title activator white-text"><strong>Onko team during SCIT Trade Show 2019</strong></span>
+                <p class="white-text">Each year, the University of Wollongong showcases student projects from
+                  the School of Computing and Information Technology (SCIT). This was a precious opportunity to make a
+                  demonstration of our OnkoDICOM software to professors, students and health professionals.</p>
+              </div>
             </div>
           </div>
 
@@ -183,17 +189,8 @@
   <div id="volunteer-section" class="container">
     <div class="section">
       <div class="row">
-        <div class="col s12 center">
-          <h2 class="red-text text-lighten-1">VOLUNTEERING</h2>
-          <p class="center light">My own purpose of life is to be fully committed in helping people to have
-            a better future. I achieve my desire everyday not only through my professionnal career, but also
-            through my volunteering experiences. Want to know more about them?</p>
 
-
-          <div class="row center">
-            <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light red lighten-1 white-text">Yes, definitely!</a>
-          </div>
-
+        <div class="col s6">
 
           <div class="card red darken-3 left-align">
             <div class="card-image waves-effect waves-block waves-light">
@@ -206,6 +203,18 @@
             </div>
           </div>
         </div>
+
+        <div class="col s6 left-align">
+
+          <h2 class="red-text text-lighten-1">VOLUNTEERING</h2>
+          <p class="light">My own purpose of life is to be fully committed in helping people to have
+            a better future. I achieve my desire everyday not only through my professionnal career, but also
+            through my volunteering experiences. Want to know more about them?</p>
+
+          <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light red lighten-1 white-text">Yes, definitely!</a>
+          
+        </div>
+
       </div>
     </div>
   </div>
@@ -215,15 +224,19 @@
   <div id="blog-section" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center">
-          <h2 class="green-text text-lighten-2">PERSONAL BLOG</h2>
+        <div class="row">
+
+          <div class="col s6 right-align">
+
+            <h2 class="green-text text-lighten-2">PERSONAL BLOG</h2>
             <p class="center light">What about my interests? <strong>Personal development</strong>, <strong>trips</strong>, it's all in this section!</p>
+            <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light green lighten-2 black-text">Come here</a>
 
-            <div class="row center">
-              <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light green lighten-2 black-text">Come here</a>
-            </div>
+          </div>
 
-            <div class="card green darken-2"> <!--style="width:500px;"-->
+          <div class="col s6">
+
+            <div class="card green darken-2">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="{% static 'presentation/images/NZ.jpg' %}" alt="New-Zealand">
               </div>
@@ -234,10 +247,13 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
-    <div class="parallax"><img src="{% static 'presentation/images/sea1.jpg' %}" alt="Australian_sea"></div>
+      <div class="parallax"><img src="{% static 'presentation/images/sea1.jpg' %}" alt="Australian_sea"></div>
+    </div>
   </div>
+
 
 
 <!-- CONTACT SECTION -->
