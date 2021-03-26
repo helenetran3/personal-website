@@ -12,7 +12,7 @@
       belowOrigin: true, // Displays dropdown below the button
       alignment: 'left' // Displays dropdown with edge aligned to the left of button
     });
-
+    $('.collapsible').collapsible();
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space

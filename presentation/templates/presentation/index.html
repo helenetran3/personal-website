@@ -1,7 +1,5 @@
 {% load static %}
 
-<!-- <link rel="stylesheet" type="text/css" href="{% static 'dev_projects/css/style.css' %}"> -->
-
 <!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
@@ -31,11 +29,11 @@
           <!-- <li><a class="white-text" href="#contact-me">CONTACT</a></li> -->
         </ul>
 
-        <ul id="nav-mobile" class="sidenav">
-          <li><a href="#">EDUCATION</a></li>
-          <li><a href="{% url 'dev_projects:index' %}">PROJECTS</a></li>
-          <li><a href="#">VOLUNTEERING</a></li>
-          <li><a href="#">BLOG</a></li>
+        <ul id="nav-mobile" class="sidenav black-light">
+          <li><a class="white-text" href="{% url 'presentation:education' %}">EDUCATION</a></li>
+          <li><a class="white-text" href="#">PROJECTS</a></li>
+          <li><a class="white-text" href="#">VOLUNTEERING</a></li>
+          <li><a class="white-text" href="#">BLOG</a></li>
           <!-- <li><a class="{% url 'presentation:contact' %}" href="#contact-me">CONTACT</a></li> -->
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -93,12 +91,10 @@
           </div>
 
           <div class="col s2 right-align">
-            <!-- <div class="valign-wrapper"> -->
               <a href="mailto:tr.helene@hotmail.com" class="brand-logo white-text"><i class="material-icons">email</i></a>
               <a href="http://www.linkedin.com/in/helene-tran1" class="brand-logo white-text"><img src="{% static 'presentation/images/linkedin.png' %}" alt="linkedin" width=25></a>
               <a href="http://github.com/helenetran3" class="brand-logo white-text"><img src="{% static 'presentation/images/github.png' %}" alt="github" width=25></a>
               <a href="{% static 'presentation/images/CV_TRAN-Helene.pdf' %}" class="brand-logo white-text"><img src="{% static 'presentation/images/CV_blanc.png' %}" alt="CV" width=25></a>
-            <!-- </div> -->
           </div>
 
         </div>
@@ -119,8 +115,8 @@
               <img class="activator" src="{% static 'presentation/images/UOW_grad.jpg' %}" alt="UoW Graduation Ceremony" width="700">
             </div>
             <div class="card-content">
-              <span class="card-title activator white-text"><strong>My graduation day at the University of Wollongong</strong></span>
-              <p class="white-text">In December 2019, I graduated with Master of Computer Sciences with Distinction at the University
+              <span class="card-title activator white-text"><strong>Graduation day at the University of Wollongong</strong></span>
+              <p class="white-text">I graduated in December 2019 with Master of Computer Sciences with Distinction at the University
                 of Wollongong in Australia. What an immersive and rewarding year!</p>
             </div>
           </div>
@@ -144,15 +140,12 @@
                 </ul> -->
             </p>
 
-            <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light blue darken-2">More</a>
+            <a href="{% url 'presentation:education' %}" class="btn-large waves-effect waves-light blue darken-2">More</a>
 
         </div>
       </div>
     </div>
   </div>
-
-
-
 
 
   <!-- PROJECT SECTION -->
@@ -173,7 +166,7 @@
               Front-End Developer of <a href="https://onkodicom.com.au/" class="blue-text text-lighten-2">OnkoDICOM</a>, an open-source platform for radiotherapy research
             </p>
   
-            <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light deep-purple lighten-3 black-text">More</a>
+            <a href="{% url 'presentation:contact' %}" class="btn-large waves-effect waves-light deep-purple lighten-3 black-text">More</a>
           </div>
 
           <div class="col s6">
@@ -223,7 +216,7 @@
             a better future. I achieve my desire everyday not only through my professionnal career, but also
             through my volunteering experiences. Want to know more about them?</p>
 
-          <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light red darken-3 white-text">Yes, definitely!</a>
+          <a href="{% url 'presentation:contact' %}" class="btn-large waves-effect waves-light red darken-3 white-text">Yes, definitely!</a>
           
         </div>
 
@@ -242,7 +235,7 @@
 
             <h2 class="green-text text-lighten-2">PERSONAL BLOG</h2>
             <p class="light">What about my interests? <strong>Personal development</strong>, <strong>trips</strong>, it's all in this section!</p>
-            <a href="{% url 'dev_projects:index' %}" class="btn-large waves-effect waves-light green lighten-2 black-text">Come here</a>
+            <a href="{% url 'presentation:contact' %}" class="btn-large waves-effect waves-light green lighten-2 black-text">Let's have a look</a>
 
           </div>
 
@@ -265,7 +258,6 @@
       <div class="parallax"><img src="{% static 'presentation/images/sea1.jpg' %}" alt="Australian_sea"></div>
     </div>
   </div>
-
 
 
   <!-- CONTACT SECTION -->
