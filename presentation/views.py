@@ -10,5 +10,9 @@ class EducationView(generic.TemplateView):
     template_name = 'presentation/education.html'
 
 
+class ProjectsView(generic.TemplateView):
+    template_name = 'presentation/projects.html'
+
+
 class ContactView(generic.TemplateView):
     template_name = 'presentation/contact.html'
