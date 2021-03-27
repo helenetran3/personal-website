@@ -13,6 +13,13 @@
       alignment: 'left' // Displays dropdown with edge aligned to the left of button
     });
     $('.collapsible').collapsible();
+    $('.card').hover(
+      function() {
+          $(this).find('> .card-image > img.activator').click();
+      }, function() {
+          $(this).find('> .card-reveal > .card-title').click();
+      }
+    );
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
