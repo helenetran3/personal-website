@@ -4400,7 +4400,9 @@ nav ul li {
 }
 
 nav ul li.active {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.486);
+  /* background-color: rgba(151, 109, 19, 0.486); */
+  /* background-color: rgba(168, 132, 14, 0.568); */
 }
 
 nav ul a {
