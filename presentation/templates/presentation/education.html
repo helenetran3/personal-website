@@ -29,10 +29,9 @@
 <body>
   <div class="navbar-fixed">
     <nav class="grey darken-4" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="{% url 'presentation:index' %}" class="brand-logo white-text"><i class="material-icons">home</i></a>
         <ul class="right hide-on-med-and-down">
-          <li class="active"><a class="white-text" href="{% url 'presentation:education' %}">EDUCATION</a></li>
+          <li><a class="white-text" href="{% url 'presentation:index' %}">HOME</a></li>
+          <li><a class="white-text" href="{% url 'presentation:education' %}">EDUCATION</a></li>
           <li><a class="white-text" href="{% url 'presentation:projects' %}">PROJECTS</a></li>
           <li><a class="white-text" href="#volunteer-section">VOLUNTEERING</a></li>
           <li><a class="white-text" href="#blog-section">BLOG</a></li>
@@ -45,7 +44,6 @@
           <li><a class="white-text" href="#">BLOG</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      </div>
     </nav>
   </div>
 
@@ -59,57 +57,90 @@
 
         <div class="row center">
           <ul class="collapsible popout">
+
             <li>
-              <div class="collapsible-header blue darken-3">
-                <div class="col s1 center white-text">2021-2023</div> 
-                <!-- <div class="col s1 center"><i class="material-icons yellow-text text-lighten-3">play_arrow</i></div> -->
+              <div class="collapsible-header blue darken-3 white-text">
+                <div class="col s1 center">2021-2023</div> 
                 <div class="col s7 valign-wrapper">
-                  <i class="material-icons yellow-text text-lighten-3">play_arrow</i>
-                  <a class="yellow-text text-lighten-3">Doctor of Philosophy</a><a class="white-text">, <em>Lojelis</em> and <em>LIMOS</em></a></div>
-                <div class="col s4 right-align white-text">Clermont-Ferrand, France</div>
+                  <i class="material-icons">play_arrow</i>
+                  Doctor of Philosophy, &nbsp;<em>Lojelis</em>&nbsp; and &nbsp;<em>LIMOS</em></div>
+                <div class="col s4 right-align">Clermont-Ferrand, France</div>
               </div>
               <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
             </li>
+
             <li>
-              <div class="collapsible-header blue darken-2">
-                <div class="col s1 center white-text">2018-2019</div> 
+              <div class="collapsible-header blue darken-2 white-text">
+                <div class="col s1 center">2018-2019</div> 
                 <div class="col s7 valign-wrapper">
-                  <i class="material-icons green-text text-accent-2">check</i>
-                  <a class="green-text text-accent-2">Master of Computer Science</a><a class="white-text">, <em>University of Wollongong</em></a></div>
-                <div class="col s4 right-align white-text">Wollongong, Australia</div>
+                  <i class="material-icons">check</i>
+                  Master of Computer Science, &nbsp;<em>University of Wollongong</em></div>
+                <div class="col s4 right-align">Wollongong, Australia</div>
               </div>
               <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
             </li>
+
             <li>
-              <div class="collapsible-header blue darken-1">
-                <div class="col s1 center white-text">2016-2020</div> 
+              <div class="collapsible-header blue darken-1 white-text">
+                <div class="col s1 center">2016-2020</div> 
                 <div class="col s7 valign-wrapper">
-                  <i class="material-icons green-text text-accent-2">check</i>
-                  <a class="green-text text-accent-2">Software Engineering Degree</a><a class="white-text">, <em>ENSIIE</em></a></div>
-                <div class="col s4 right-align white-text">Strasbourg and Evry, France</div>
+                  <i class="material-icons">check</i>
+                  Software Engineering Degree, &nbsp;<em>ENSIIE</em>
+                </div>
+                  <!-- <a class="green-text text-accent-2">Software Engineering Degree</a><a class="white-text">, <em>ENSIIE</em></a></div> -->
+                <div class="col s4 right-align">Strasbourg and Evry, France</div>
               </div>
               <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
             </li>
+
             <li>
-              <div class="collapsible-header blue lighten-1">
-                <div class="col s1 center white-text">2014-2016</div> 
+              <div class="collapsible-header blue lighten-1 black-text">
+                <div class="col s1 center">2014-2016</div> 
                 <div class="col s7 valign-wrapper">
-                  <i class="material-icons green-text text-accent-2">check</i>
-                  <a class="green-text text-accent-2">Preparatory Classes for the Grandes Ecoles</a><a class="white-text">, <em>Paul Valéry High School</em></a></div>
-                <div class="col s4 right-align white-text">Paris, France</div>
+                  <i class="material-icons">check</i>
+                  Preparatory Classes for the Grandes Ecoles, &nbsp;<em>Paul Valéry High School</em>
+                </div>
+                  <!-- <a class="green-text text-accent-2">Preparatory Classes for the Grandes Ecoles</a><a class="black-text">, <em>Paul Valéry High School</em></a></div> -->
+                <div class="col s4 right-align">Paris, France</div>
               </div>
-              <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+              <div class="collapsible-body white left-align"><span>
+                  2-year intensive class in Mathematics and Physics to prepare for national competitive exams for engineering graduate school
+                  <blockquote>
+                    <ul>
+                      <li>Main classes: Mathematics, Physics, Chemistry, English</li>
+                      <li>Options taken: Industrial Sciences</li>
+                    </ul>
+                  </blockquote>
+                </span></div>
             </li>
+
             <li>
-              <div class="collapsible-header blue lighten-2">
-                <div class="col s1 center white-text">2014</div>
+              <div class="collapsible-header blue lighten-2 black-text">
+                <div class="col s1 center">2014</div>
                 <div class="col s7 valign-wrapper">
-                  <i class="material-icons green-text text-accent-2">check</i>
-                  <a class="green-text text-accent-2">Scientific Baccalauréat</a><a class="white-text">, <em>Epin High School</em></a></div>
-                <div class="col s4 right-align white-text">Vitry-sur-Seine, France</div>
+                  <i class="material-icons">check</i>
+                  Scientific Baccalauréat, &nbsp;<em>Epin High School</em>
+                </div>
+                  <!-- <a class="green-text text-accent-2">Scientific Baccalauréat</a><a class="black-text">, <em>Epin High School</em></a></div> -->
+                <div class="col s4 right-align">Vitry-sur-Seine, France</div>
               </div>
-              <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+              <div class="collapsible-body white left-align">
+                <span>
+                <img class="responsive-img col s1" src="{% static 'presentation/images/logos/epin.png' %}" alt="Epin">
+                <span class="col s11">
+                  Scientific Baccalauréat, &nbsp;<em>Very Good</em> distinction
+                  <blockquote>
+                    <ul>
+                      <li>Main classes: Mathematics, Physics, Chemistry, English</li>
+                      <li>Speciality: Mathematics</li>
+                      <li>Options taken: Life and Earth Sciences, Spanish, Chinese, Latin</li>
+                    </ul>
+                  </blockquote>
+                </span>
+                </span>
+              </div>
             </li>
+
           </ul>
         </div>
 
@@ -119,11 +150,11 @@
   </main>
 
   <!-- Footer: "Made with Materialize" -->
-  <div class="footer-copyright black-light">
-    <div class="container white-text">
+  <!-- <div class="container white-text">
+    <div class="footer-copyright black-light">
     Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
     </div>
-  </div>
+  </div> -->
 
 
   <!--  Scripts -->

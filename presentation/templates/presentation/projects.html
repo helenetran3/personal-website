@@ -29,11 +29,10 @@
 <body>
   <div class="navbar-fixed">
     <nav class="grey darken-4" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="{% url 'presentation:index' %}" class="brand-logo white-text"><i class="material-icons">home</i></a>
         <ul class="right hide-on-med-and-down">
+          <li><a class="white-text" href="{% url 'presentation:index' %}">HOME</a></li>
           <li><a class="white-text" href="{% url 'presentation:education' %}">EDUCATION</a></li>
-          <li class="active"><a class="white-text" href="{% url 'presentation:projects' %}">PROJECTS</a></li>
+          <li><a class="white-text" href="{% url 'presentation:projects' %}">PROJECTS</a></li>
           <li><a class="white-text" href="#volunteer-section">VOLUNTEERING</a></li>
           <li><a class="white-text" href="#blog-section">BLOG</a></li>
         </ul>
@@ -45,7 +44,6 @@
           <li><a class="white-text" href="#">BLOG</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      </div>
     </nav>
   </div>
 
@@ -60,61 +58,57 @@
         <div class="row center">
           <ul class="collapsible popout">
             <li>
-              <div class="collapsible-header deep-purple darken-2" valign-wrapper>
-                <div class="col s2 center white-text">2021 - 2023</div>
-                <div class="col s6 valign-wrapper">
-                  <i class="material-icons yellow-text text-lighten-3">play_arrow</i>
-                  <a class="yellow-text text-lighten-3">Automatic Emotion Recognition with Multimodal Sources </a><a class="white-text">&nbsp;(Ph.D)</a>
+              <div class="collapsible-header deep-purple darken-2 white-text">
+                <div class="col s1 center">2021-2023</div>
+                <div class="col s7 valign-wrapper">
+                  <i class="material-icons">play_arrow</i>
+                  Automatic Emotion Recognition with Multimodal Sources (Ph.D)
                 </div>
-                <div class="col s4 right-align white-text"><em>Lojelis</em> and <em>LIMOS</em></div>
+                <div class="col s4 right-align"><em>Lojelis</em> and <em>LIMOS</em></div>
               </div>
               <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
             </li>
             <li>
-              <div class="collapsible-header deep-purple darken-1" valign-wrapper>
-                <div class="col s2 center white-text">Nov-Dec 2020</div>
-                <div class="col s6 valign-wrapper">
-                  <i class="material-icons green-text text-accent-2">check</i>
-                  <a class="green-text text-accent-2">
-                  Development of my personal website </a><a class="white-text">&nbsp;(self-initiated project)</a>
+              <div class="collapsible-header deep-purple darken-1 white-text">
+                <div class="col s1 center">Nov-Dec 2020</div>
+                <div class="col s7 valign-wrapper">
+                  <i class="material-icons">check</i>
+                  Development of my personal website (self-initiated project)
                 </div>
                 <div class="col s4 right-align white-text"></div>
               </div>
               <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
             </li>
             <li>
-              <div class="collapsible-header deep-purple lighten-1 valign-wrapper">
-                <div class="col s2 center white-text">Mar-Aug 2020</div>
-                <div class="col s6 valign-wrapper">
-                  <i class="material-icons green-text text-accent-2">check</i>
-                  <a class="green-text text-accent-2">
-                  Prostate Cancer Classification </a><a class="white-text">&nbsp;(research internship)</a>
+              <div class="collapsible-header deep-purple lighten-1 black-text">
+                <div class="col s1 center">Mar-Aug 2020</div>
+                <div class="col s7 valign-wrapper">
+                  <i class="material-icons">check</i>
+                  Prostate Cancer Classification (research internship)
                 </div>
-                <div class="col s4 right-align white-text"><em>Guerbet</em></div>
+                <div class="col s4 right-align"><em>Guerbet</em></div>
               </div>
               <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
             </li>
             <li>
-              <div class="collapsible-header deep-purple lighten-2 valign-wrapper">
-                <div class="col s2 center white-text">Mar-Nov 2019</div>
-                <div class="col s6 valign-wrapper">
-                  <i class="material-icons green-text text-accent-2">check</i>
-                  <a class="green-text text-accent-2">
-                  Software Development of OnkoDICOM </a><a class="white-text">&nbsp;(final year project)</a>
+              <div class="collapsible-header deep-purple lighten-2 black-text">
+                <div class="col s1 center">Mar-Nov 2019</div>
+                <div class="col s7 valign-wrapper">
+                  <i class="material-icons">check</i>
+                  Software Development of OnkoDICOM (final year project)
                 </div>
-                <div class="col s4 right-align white-text"><em>University of Wollongong</em></div>
+                <div class="col s4 right-align"><em>University of Wollongong</em></div>
               </div>
               <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
             </li>
             <li>
-              <div class="collapsible-header deep-purple lighten-3 valign-wrapper">
-                <div class="col s2 center white-text">Jun 2017</div> 
-                <div class="col s6 valign-wrapper">
-                  <i class="material-icons green-text text-accent-2">check</i>
-                  <a class="green-text text-accent-2">
-                  Software Game Development </a><a class="white-text">&nbsp;(self-initiated project)</a>
+              <div class="collapsible-header deep-purple lighten-3 black-text">
+                <div class="col s1 center">Jun 2017</div> 
+                <div class="col s7 valign-wrapper">
+                  <i class="material-icons">check</i>
+                  Software Game Development (self-initiated project)
                 </div>
-                <div class="col s4 right-align white-text"><em>HumanIIE</em></div>
+                <div class="col s4 right-align"><em>HumanIIE</em></div>
               </div>
               <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
             </li>
