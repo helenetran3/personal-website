@@ -1,6 +1,6 @@
 # Personal Website
 
-A personal website built from scratch to learn and practise web development in Django (version 3.1.7).
+A personal website built from scratch to learn and practise web development in Django (version 3.1.7). Made with Materialize template.
 
 #### Navigation Bar
 1. Home
@@ -18,3 +18,36 @@ Composed of 6 sections:
 4. **Professional Projects**: photo, short description and *More* button
 5. **Volunteering**: photo, short description and *More* button
 6. **Personal Blog section**: photo, short description and *More* button
+
+
+
+**Home Page - Description**
+ |-----------------------|
+ 
+<p font="italic" align="center">  
+  <img src="screenshots/Home-Description.PNG" align="center" alt="Home Page - Presentation">
+</p>
+
+
+**Home Page - Education section** (*after scrolling the first screenshot*)
+ |-----------------------|
+
+<p font="italic" align="center">  
+  <img src="screenshots/Home-Education.PNG" align="center" alt="Home Page - Education section">
+</p>
+
+
+**Education Page** (with one list item displayed)
+ |-----------------------|
+ 
+<p font="italic" align="center">  
+  <img src="screenshots/Education.PNG" align="center" alt="Education Page">
+</p>
+
+
+**Professional Project Page**
+ |-----------------------|
+ 
+<p font="italic" align="center">  
+  <img src="screenshots/Projects.PNG" align="center" alt="Professional Project Page">
+</p>
