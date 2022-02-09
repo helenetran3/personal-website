@@ -1,6 +1,10 @@
 # Personal Website
 
-A personal website built from scratch to learn and practise web development in Django (version 3.1.7). Made with Materialize template.
+A personal website built from scratch to learn and practise web development in **Django** (version 3.1.7). Made with **Materialize** template.
+
+Run the following command from the root of the repository: 
+`python3 manage.py runserver`.
+This will display the http address where you can see the website.
 
 #### Navigation Bar
 1. Home
